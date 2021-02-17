@@ -4,7 +4,6 @@ import '../css/styles.css'
 
 Modal.setAppElement("#root")
 export const OverviewModal = props => {
-    console.log(props)
     
     return (
         <div className="modalDiv">

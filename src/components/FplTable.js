@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import MOCK_DATA from "./MOCK_DATA.json";
 import { COLUMNS } from "./columns";
 import "../css/styles.css";
 import HandleMangers from "./HandleMangers";
@@ -40,6 +39,7 @@ export const FplTable = () => {
   const [dataSelected, setDataSelected] = useState(null);
   const onClick = () => setshowAddUI(!showAddUI);
 
+  // Setting up the table headers from column.js
   const tableHeader = () => {
     const headerItems = COLUMNS;
     return headerItems.map((key, index) => {
@@ -47,6 +47,7 @@ export const FplTable = () => {
     });
   };
 
+  // populating the table body with data from info state
   const tableBody = () => { 
     return info.map((data) => {
       let score = 0;
@@ -95,6 +96,7 @@ export const FplTable = () => {
     });
   };
 
+  // button function to delete data from table
   const removeData = (id) => {
     const find = info.filter((data) => id !== data.teamId);
     var new_cache = info.filter((data) => id !== data.teamId);
@@ -102,11 +104,13 @@ export const FplTable = () => {
     setInfo(find);
   };
 
+  // Button function to view details concerning point allocation
   const overviewData = (id) => {
     const find = info.filter((data) => id == data.teamId);
     setCurrentlySelected(find[0].points);
   };
 
+  // Button function to open edit modal
   const editData = (id) => {
     const find = info.filter((data) => id == data.teamId);
     setDataSelected(find);
@@ -139,7 +143,6 @@ export const FplTable = () => {
           data={dataSelected}
         />
       )}
-      {/* <EditModal/> */}
     </div>
   );
 };

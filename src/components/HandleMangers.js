@@ -33,6 +33,7 @@ class HandleMangers extends Component {
         })
     }
 
+    // Form submit to add new User to table
     handleSubmit = event => {
         const teamId = this.generateID()
         const formData = {"teamId":teamId,"teamName":this.state.teamName,"managerName":this.state.managerName,"teamNickname":this.state.teamNickname,"points":[]}
@@ -42,6 +43,7 @@ class HandleMangers extends Component {
         window.localStorage.setItem('data', JSON.stringify(initData))
     }
 
+    // Function to generate random unique Id
     generateID = () => {
         const min = 1
         const max = 10000000

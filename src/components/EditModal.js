@@ -34,6 +34,7 @@ class EditModal extends Component {
         })
     }
 
+    // Form Submit for edit modal
     handleSubmit = (event) => {        
         let initData = JSON.parse(window.localStorage.getItem('data'))
         let id = this.props.data[0].teamId
