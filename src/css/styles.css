@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  color: #4d4d4d;
+}
+
+#title {
+  text-align: center;
+}
+
+#fpl_table {
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+}
+
+#fpl_table td,
+#fpl_table th {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+/* #fpl_table th {
+    border: 2px solid #816325;
+    padding: 12px;
+  } */
+
+#fpl_table tr:hover {
+  background-color: #ddd;
+}
+
+#fpl_table th {
+  padding: 10px;
+  text-align: center;
+  background-color: #232323;
+  color: white;
+}
+
+.opration {
+  text-align: center;
+}
+
+.button {
+  color: #f44336;
+}
+
+.edit {
+    color: #4caf50;
+}
+
+.actions {
+    color: #816325;
+}
+  
+
+.manager_btn {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-family: "Quicksand", sans-serif;
+    color: #816325;
+    padding: 3px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* border: 1px solid #816325; */
+    background-color: transparent;
+}
+
+#saveBtn {
+    margin-top: 20px;
+    border: 1px solid Black;
+    width: 25%;
+    outline: none;
+    font-size: 17px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* border: 1px solid #816325; */
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.edit, .button, .actions {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-family: "Quicksand", sans-serif;
+    /* color: #4caf50; */
+    padding: 3px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 5px;
+    /* border: 1px solid #4caf50; */
+    background-color: transparent;
+}
+  
+
+.edit:hover, .button:hover, .actions:hover {
+/* border: 1px solid blue; */
+    transition: all .5s ease-in-out;
+    transform: scale(1.5);
+}
+
+.manager_btn:hover {
+    border: 1px solid #816325;
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+    /* background-color: #816325; */
+    /* color: white; */
+}
+
+#saveBtn:hover {
+    border: 1px solid #816325;
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+    border: 2px solid #816325;
+    border-radius: 20px;
+    font-family: "Quicksand", sans-serif;
+    color: #4d4d4d;
+    font-size: 15px;
+}
+
+input[type=text]:hover,input[type=text]:focus {
+    transition: all .5s ease-in-out;
+    box-shadow: 1px 3px 5px #aca496;
+    outline: none;
+}
+
+
+form{
+    margin-top: 20px;
+}
+
+#editModal
+{
+    width: 60%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px !important;
+    box-shadow: 1px 3px 5px #aca496;
+}
+
+#overviewModal
+{
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    border-radius: 15px !important;
+    box-shadow: 1px 3px 5px #aca496;
+}
+
+
+#closeModal {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    /* color: #4caf50; */
+    padding: 3px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 5px;
+    /* border: 1px solid #4caf50; */
+    background-color: transparent;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+/* Placeholder css */
+::-webkit-input-placeholder {
+    text-align: center;
+}
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+}
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+}
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+}
