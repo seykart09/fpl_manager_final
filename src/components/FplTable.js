@@ -131,18 +131,23 @@ export const FplTable = () => {
         Add Manager
       </button>
       {showAddUI ? <HandleMangers /> : null}
+
+      {/* Hide or show depending on data pass */}
       {currentlySelected == null ? null : (
         <OverviewModal
           onCloseButtonClick={() => setCurrentlySelected(null)}
           scores={currentlySelected}
         />
       )}
+
+      {/* Hide or show depending on data pass */}
       {dataSelected == null ? null : (
         <EditModal
           onCloseButtonClick={() => setDataSelected(null)}
           data={dataSelected}
         />
       )}
+
     </div>
   );
 };
